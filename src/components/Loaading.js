@@ -6,6 +6,7 @@ class Loading extends Component{
         <>
             <div className="pokebola">
                 <div className="pokebola-botao"></div>
+                {console.log("dentro del loading")}
             </div>
             <div ><h1>Cargando</h1></div>
         </>
