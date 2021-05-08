@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {traerInfo} from '../funcsAux';
 import CartaPoke from "./cartaPokemon";
+import Loading from "./Loaading"
+import "../css/style.css"
 
 class MostrarPokemons extends Component{
   
@@ -23,14 +25,23 @@ class MostrarPokemons extends Component{
       }
 
       return(
-        
-          <li style={{opacity: "1", top: "0.05px", left: "0px", transform: "matrix(1, 0, 0, 1, 0, 0)",}}>        
-            {this.state.pokemons.map((p)=>(
-            <div key={p[0].name} style={{float:"left", margin: "1em"}}>
-                <CartaPoke nombrePoke={(p[0]).name} urlImgPoke={p[0].sprites.front_default} tipoPoke={p[0].types} imgGrande={p[1]} orden={p[0].id} stats={p[0].stats}/>
+        <>
+          {(this.state.pokemons.length === 0) ?<div className="centrar1">
+                                                  <div className="centrar2">
+                                                    <Loading/>
+                                                  </div>
+                                                </div>
+                                                :""}
+
+          <div>
+                   
+              {this.state.pokemons.map((p)=>(
+              <div key={p[0].name} style={{float:"left", margin: "1em"}}>
+                  <CartaPoke nombrePoke={(p[0]).name} urlImgPoke={p[0].sprites.front_default} tipoPoke={p[0].types} imgGrande={p[1]} orden={p[0].id} stats={p[0].stats}/>
               </div>))}
-          </li>
-        
+            
+          </div>
+        </>
       )     
     }
 };
