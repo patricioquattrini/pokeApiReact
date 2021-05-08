@@ -41,7 +41,7 @@ class PopUpPokemon extends Component {
                                 <Col md={6}>
                                     <div className="tipoPokemonPopUp"><h3>Tipo</h3>
                                         {this.props.tipoPokemon.map((t,i)=>(
-                                        <span className={`pill ${t.type.name}`} ><TipoPokemon key={i} tipo={t.type.name} /></span>))}
+                                        <span key={i} className={`pill ${t.type.name}`} ><TipoPokemon tipo={t.type.name} /></span>))}
                                     </div>
                                     <div className="graficoStats">
                                         <div><Radar stats={this.props.stats} /></div>

@@ -19,7 +19,7 @@ class CartaPoke extends Component{
               
             <div className="tiposDelPokemon"> 
               {this.props.tipoPoke.map((t,i)=>(
-                <span className={`pill ${t.type.name}`}><TipoPokemon key={i} tipo={t.type.name} /></span>
+                <span key={i} className={`pill ${t.type.name}`}><TipoPokemon tipo={t.type.name} /></span>
             ))}
             </div>
         </div>
