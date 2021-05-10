@@ -1,4 +1,5 @@
 import {Component} from "react"
+import "../css/style.css"
 
 class Loading extends Component{
     render(){
