@@ -1,7 +1,9 @@
 .gifCargando{
 
-    left: 30%;
+    
     position: absolute;
+    right: -200px;
+    
 }
 
 .centrar1{
