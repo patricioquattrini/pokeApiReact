@@ -1,3 +1,9 @@
+.gifCargando{
+
+    left: 30%;
+    position: absolute;
+}
+
 .centrar1{
     height: 100vh;
     position: relative;

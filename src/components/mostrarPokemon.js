@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {traerInfo} from '../funcsAux';
 import CartaPoke from "./cartaPokemon";
-import Loading from "./Loaading"
+import Loading from "./Loading"
 import "../css/style.css"
 
 class MostrarPokemons extends Component{

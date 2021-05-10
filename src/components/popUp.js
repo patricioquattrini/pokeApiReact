@@ -25,7 +25,7 @@ class PopUpPokemon extends Component {
         
         return(
            <> 
-                <button className="estiloBoton" centered="true" onClick={() => this.abrirModal()}>Clickeame</button>
+                <button className="estiloBoton" centered="true" onClick={() => this.abrirModal()}>Ver Stats</button>
                 <Modal dialogClassName="modal-50w" centered show={this.state.showModal} onHide={() => this.abrirModal()}>
                     
                    
