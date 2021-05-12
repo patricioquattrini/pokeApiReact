@@ -52,8 +52,9 @@ class MostrarPokemons extends Component{
                   <CartaPoke nombrePoke={(p[0]).name} urlImgPoke={p[0].sprites.front_default} tipoPoke={p[0].types} imgGrande={p[1]} orden={p[0].id} stats={p[0].stats}/>
               </div>))}
             
+              <div><h6>Versión: 1.0.1</h6></div>
           </div>
-        <h6>Versión: 1.0.1</h6>        
+                  
         </>
       )     
     }
