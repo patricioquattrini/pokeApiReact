@@ -53,6 +53,7 @@ class MostrarPokemons extends Component{
               </div>))}
             
           </div>
+        <h6>Versión: 1.0.1</h6>        
         </>
       )     
     }
