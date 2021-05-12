@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import {traerInfo} from '../funcsAux';
+import { hacer10Fetch } from '../funcsAux';
 import CartaPoke from "./cartaPokemon";
 import Loading from "./Loading"
 import "../css/style.css"
+
 
 class MostrarPokemons extends Component{
   
@@ -11,18 +12,28 @@ class MostrarPokemons extends Component{
       this.state={
         pokemons:[],
       };   
+      this.traidos = false;
     }
     
-    buscarPokemons = async () =>{
-      this.setState({
-        pokemons: await traerInfo(),
-      })
-    }
+    traerInfo = async () => {
+      if (this.traidos) 
+        return;
+
+      this.traidos = true;
+      const imgUrl = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/";
+      
+      for(let i = 0; i < 145; i= i+10){  
+          // Buscar 10 pokemones nuevos en simultaneo  
+          const datas = await hacer10Fetch(imgUrl, i);
+         // Actualizar lista de pokemones en el state
+         this.setState({
+            pokemons: this.state.pokemons.concat(datas)
+          })
+      }
+    };
     
     render(){
-      if(this.state.pokemons.length === 0){
-        this.buscarPokemons();
-      }
+      this.traerInfo();
 
       return(
         <>

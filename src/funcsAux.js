@@ -1,21 +1,33 @@
-export const traerInfo = async () => {
-    let datas = [];
-    let tupla = [];
-    const imgUrl = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/";
+export const hacer10Fetch = async (imgUrl, x) =>{
     
-    for(let j = 1; j < 152; j++){    
-        try{
-            
-            const response = await fetch("https://pokeapi.co/api/v2/pokemon/"+j);
-            let data = await response.json();
-            tupla = [data, imgUrl+padLeft(j,3)+".png"];
-            datas.push(tupla);
-        } catch(err){
-            console.log("Error");
-        }
+    let datass = [];
+    let tupla = [];
+    let fs = [];
+    
+    for(let j = 1; j < 11; j++){    
+        let id = j + x;
+        console.log("que mierda es esto"+id)
+        let f = fetch("https://pokeapi.co/api/v2/pokemon/"+id)
+        fs.push(f)        
     }
-    return datas;
-}
+    
+    return Promise.all(fs)
+                .then(res => {
+                    let js = res.map(r =>r.json())
+                    return Promise.all(js).then(es =>{ 
+
+                        es.forEach((e)=>{
+                            tupla = [e, imgUrl+padLeft(e.id,3)+".png"];
+                            datass.push(tupla)
+                        })
+                        console.log(datass)
+                        return datass;
+                    })
+                   
+                })
+                            
+                .catch(e => console.log("algo salio mal en las promesas:"+e))
+};
 
 function padLeft(value, length) {
     return (value.toString().length < length) ? padLeft("0" + value, length) : 
@@ -25,3 +37,4 @@ function padLeft(value, length) {
 export default function primeraLetraMayus(str){
     return str.charAt(0).toUpperCase() + str.slice(1);
 };
+
