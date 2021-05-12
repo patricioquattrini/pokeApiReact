@@ -6,11 +6,11 @@ class Loading extends Component{
         return(
         <>
             <div >
-                <img style={{position: "absolute",right: "-180px"}} alt="pikachu" src="https://i.pinimg.com/originals/75/b6/c7/75b6c78c60c714b08f402c6b142e15cc.gif" />
+                <img style={{position: "absolute",right: "-48vh", top:"-150px"}} alt="pokeCarga" src="https://static.alfabetajuega.com/abj_public_files/multimedia/imagenes/201706/196349.alfabetajuega-pokemon-go-pantalla-carga-2-230617---copia.png" />
                
                 
             </div>
-            <div><center><h1 style={{marginTop: "300px"}}>Cargando...</h1></center></div>
+            <div><center><h1 style={{marginTop: "470px"}}>Cargando...</h1></center></div>
         </>
         )
     }

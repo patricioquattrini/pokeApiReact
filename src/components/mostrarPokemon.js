@@ -14,6 +14,7 @@ class MostrarPokemons extends Component{
       };   
       this.traidos = false;
     }
+   
     
     traerInfo = async () => {
       if (this.traidos) 

@@ -9,7 +9,7 @@ import PopUpPokemon from "./popUp";
 class CartaPoke extends Component{
   
   render(){
-  
+    
     return(
     <>
       <div className="cartaPokemon" >
@@ -23,7 +23,6 @@ class CartaPoke extends Component{
             ))}
             </div>
         </div>
-        
         <center><PopUpPokemon tipoPokemon={this.props.tipoPoke} imgGrande={this.props.imgGrande} nombrePoke={this.props.nombrePoke} orden={this.props.orden} stats={this.props.stats}/></center>      
                 
       </div>
