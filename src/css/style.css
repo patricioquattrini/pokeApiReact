@@ -1,3 +1,11 @@
+.tituloTopPokemon{
+  display: block;
+  margin: auto;
+  width: 300;
+  height: 300px;
+  border: 25px solid #e81239
+ 
+}
 .gifCargando{
 
     
