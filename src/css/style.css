@@ -1,0 +1,287 @@
+.tituloTopPokemon{
+  display: block;
+  margin: auto;
+  width: 300;
+  height: 300px;
+  border: 25px solid #e81239
+ 
+}
+.gifCargando{
+
+    
+    position: absolute;
+    right: -200px;
+    
+}
+
+.centrar1{
+    height: 100vh;
+    position: relative;
+}
+.centrar2{
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 44%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.pokebola {
+  
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border: 5px solid #000;
+  border-radius: 50%;
+  box-shadow: inset -10px 10px 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: gira 4s infinite;
+  margin: 20px auto;
+}
+.pokebola:before,
+.pokebola:after {
+  content: "";
+  position: absolute;
+}
+.pokebola:before {
+  background-color: #ef4036;
+  width: 100%;
+  height: 50%;
+}
+.pokebola:after {
+  top: calc(50% - 10px);
+  width: 100%;
+  height: 20px;
+  background-color: #000;
+}
+.pokebola-botao {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 10px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  z-index: 10;
+}
+.pokebola-botao:before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 3px solid #000;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+@keyframes gira {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+
+.cartaPokemon{
+    display: block;
+    float: left;
+    position: relative;
+    margin: 0 .78125% 50px;
+    width: 100%;
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.figuraPokemon{
+    background: #F2F2F2;
+    float: left;
+    display: block;
+    position: relative;
+    border-radius: 30px;
+    width: 150px;
+    padding-top: 1%;
+}
+.modal-50w{
+    width: 50%;
+    max-width: none !important;
+}
+.imagenGrande{
+    
+    display: block;
+    position: relative;
+    
+    left: 40px;
+    width: 80%;
+    
+}
+
+.graficoStats{
+    width: 80%;
+    margin:2vh 0 1vh 4vh;
+   
+}
+.pokeInfo{
+    clear: both;
+    top: -50px;
+    padding-left: 7.2525%;
+    
+}
+
+.tituloPopup{
+    font-family: "Roboto",arial,sans-serif;
+    color: #212121;
+    float: left;
+    font-size: 225%;
+    margin-top: 0em;
+    text-align: center;
+    width: 100%;
+    word-break: break-word;
+}
+
+.estiloBoton{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 15px;
+     
+    margin:0 0 0 1vh;
+    background:  #ffffff ;
+    border-radius: 15px;
+    
+  
+}
+
+.estiloBoton:hover{
+    opacity: 2.9;
+    text-decoration: none;
+}
+
+.tiposDelPokemon {
+    
+    font-family: 'Times New Roman', Times, serif;
+    margin:0 2.5625% 0 0;
+    font-size:17px;
+    text-align:center;
+    margin-left:2px;
+}
+
+.tipoPokemonPopUp{
+    font-family: 'Times New Roman', Times, serif;
+    margin:0 2.5625% 0 0;
+    font-size:23px;
+    text-align:center;
+    margin-left:2px;
+   
+}
+
+
+.pill{
+    border:2px solid #a4a4a4;
+    border-radius:17px;
+    margin: 4px;
+}
+
+
+.tituloPokemon{
+    font-family: "Flexo-Demi",arial,sans-serif;
+    color: #313131;
+    text-transform: none;
+    font-size: 150%;
+    margin-bottom: 5px;
+    text-align:center;
+    
+}
+
+.bug{
+    background-color: rgb(114, 159, 63);
+}
+.grass{
+    background-color:rgb(155, 204, 80);
+    
+}
+
+.poison{
+    background-color: rgb(185, 127, 201);
+    color: white;
+}
+
+.fire{
+    background-color: rgb(253, 125, 36);
+}
+
+.water{
+    background-color: rgb(69, 146, 196);
+}
+
+.flying{
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+}
+
+.rock{
+    background-color: rgb(163, 140, 33);
+}
+
+.normal{
+    background-color: rgb(164, 172, 175);
+}
+
+.psychic{
+    background-color: rgb(243, 102, 185);
+}
+.dark{
+    background-color: rgb(112, 112, 112);
+}
+
+.fighting{
+    background-color: rgb(213, 103, 35);
+}
+
+.ground{
+    background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+}
+
+.ghost{
+    background-color: rgb(123, 98, 163);
+}
+
+.steel{
+    background-color: rgb(158, 183, 184);
+}
+
+.fairy{
+    background-color: rgb(253, 185, 233);
+}
+
+.ice{
+    background-color: rgb(81, 196, 231);
+}
+
+.electric{
+    background-color: rgb(238, 213, 53);
+}
+
+.dragon{
+    background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+}

@@ -22,7 +22,6 @@ class BuscarPokemon extends Component{
     
         return(
 
-            
             <>
                 <div class="input-group mb-3" style={{width:"20%"}}>
                     <span class="input-group-text" id="basic-addon1">Buscar Pokemon</span>
