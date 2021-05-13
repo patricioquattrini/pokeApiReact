@@ -56,7 +56,7 @@ class MostrarPokemons extends Component{
 
           <div>
               
-              <div style={{background:"#e81239"}}><img className="tituloTopPokemon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png"/>
+              <div style={{background:"#e81239"}}><img alt="logopokemon" className="tituloTopPokemon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png"/>
               <h6>Versión: 1.0.1</h6>
               </div>         
               
@@ -69,7 +69,7 @@ class MostrarPokemons extends Component{
                   </div>))
               :<h4>No se encontraron resultados</h4>
               }
-              {console.log("chan "+this.state.pokemons.length)}  
+               
               
               
           </div>
