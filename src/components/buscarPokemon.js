@@ -24,7 +24,7 @@ class BuscarPokemon extends Component{
 
             <>
                 <div className="input-group mb-3" style={{width:"20%"}}>
-                    <span className="input-group-text" id="basic-addon1">Buscar Pokemon</span>
+                    <span className="input-group-text" id="basic-addon1">Search Pokemon</span>
                     <input className="form-control" aria-describedby="basic-addon1" onChange={this.buscarCambios.bind(this)} />
                 </div>
                 

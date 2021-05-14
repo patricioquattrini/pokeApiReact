@@ -25,7 +25,7 @@ class PopUpPokemon extends Component {
         
         return(
            <> 
-                <button className="estiloBoton" centered="true" onClick={() => this.abrirModal()}>Ver Stats</button>
+                <button className="estiloBoton" centered="true" onClick={() => this.abrirModal()}>View Stats</button>
                 <Modal dialogClassName="modal-50w" centered show={this.state.showModal} onHide={() => this.abrirModal()}>
                     
                    
@@ -39,7 +39,7 @@ class PopUpPokemon extends Component {
                                 </Col>        
                                 
                                 <Col md={6}>
-                                    <div className="tipoPokemonPopUp"><h3>Tipo</h3>
+                                    <div className="tipoPokemonPopUp"><h3>Type</h3>
                                         {this.props.tipoPokemon.map((t,i)=>(
                                         <span key={i} className={`pill ${t.type.name}`} ><TipoPokemon tipo={t.type.name} /></span>))}
                                     </div>
