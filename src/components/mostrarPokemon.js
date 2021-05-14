@@ -27,7 +27,7 @@ class MostrarPokemons extends Component{
       this.traidos = true;
       const imgUrl = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/";
       
-      for(let i = 0; i < 145; i= i+10){  
+      for(let i = 0; i < 385; i= i+35){  
           // Buscar 10 pokemones nuevos en simultaneo  
           const datas = await hacer10Fetch(imgUrl, i);
          // Actualizar lista de pokemones en el state

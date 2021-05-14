@@ -16,7 +16,7 @@ class CartaPoke extends Component{
         <img className="figuraPokemon" alt={this.props.urlImgPoke} src={this.props.urlImgPoke} />
         <div className="pokeInfo">
             <h5 className="tituloPokemon">{primeraLetraMayus(this.props.nombrePoke)}</h5>
-              
+                        
             <div className="tiposDelPokemon"> 
               {this.props.tipoPoke.map((t,i)=>(
                 <span key={i} className={`pill ${t.type.name}`}><TipoPokemon tipo={t.type.name} /></span>

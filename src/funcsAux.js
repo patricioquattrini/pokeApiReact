@@ -3,7 +3,7 @@ export const hacer10Fetch = async (imgUrl, x) =>{
     
     let promesasFetch = [];
     
-    for(let j = 1; j < 11; j++){    
+    for(let j = 1; j < 36; j++){    
         let id = j + x;
         let f = fetch("https://pokeapi.co/api/v2/pokemon/"+id);
         promesasFetch.push(f);        
