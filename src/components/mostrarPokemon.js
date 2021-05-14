@@ -15,7 +15,7 @@ class MostrarPokemons extends Component{
         estadoAnterior:[]
       
       };   
-      this.traidos = true;
+      this.traidos = false;
       
     }
    
