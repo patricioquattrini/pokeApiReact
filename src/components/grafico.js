@@ -19,15 +19,20 @@ class GraficoPolar extends Component {
                     data={{
                         labels: [
                             'Hp',
-                            'Atq',
-                            'Atq Esp',
-                            'Def',
-                            'Def Esp',
-                            'Vel'
+                            'Attack',
+                            'Defense',
+                            'Special Attack',
+                            'Special Defense',
+                            'Speed'
                         ],
                         datasets: [{
                             label: 'Stats',
-                            data: [this.props.stats[0].base_stat, this.props.stats[1].base_stat, this.props.stats[2].base_stat, this.props.stats[3].base_stat, this.props.stats[4].base_stat, this.props.stats[5].base_stat],
+                            data: [this.props.stats[0].base_stat,
+                                  this.props.stats[1].base_stat,
+                                   this.props.stats[2].base_stat,
+                                   this.props.stats[3].base_stat,
+                                   this.props.stats[4].base_stat,
+                                   this.props.stats[5].base_stat],
                             backgroundColor: 'rgba(255, 99, 132, 0.2)',
                             borderColor: 'rgb(255, 99, 132)',
                             pointBackgroundColor: 'rgb(255, 99, 132)',
